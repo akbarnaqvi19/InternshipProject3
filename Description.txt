@@ -1,0 +1,25 @@
+Project 3:
+
+The project aims to develop an algorithm for image identification
+
+The Digital Recognizer dataset is used which is a version of the MNIST Dataset
+
+The Data Visualization code checks for how uniform the dataset is 
+
+Preprocessing is done to accurately train the classifier
+
+A KNN classifier is then trained to classify images based on their pixel data
+
+TensorFlow/Keras Approach:
+	Although TensorFlow/Keras are used to create neural networks 
+	They can be used to act like an KNN classifier
+	The optimal value of K was found to be 1
+	But this approach leads to very  low accuracy
+	The whole model could not be saved and only the values of Best K and Accuracy were saved in a (.pkl) file
+
+SkLearn Approach(Alternative):
+	Implementation of a KNN model through SkLearn proved to be more effective
+	The accuracy of the model was checked for different values of K
+	The Accuracy was plotted with the K values
+	K=20 showed the highest accuracy
+	Model trained with highest accuracy was saved as a (.pkl) file
